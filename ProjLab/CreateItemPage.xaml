@@ -1,0 +1,43 @@
+﻿<Page x:Class="ProjLab.CreateItemPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ProjLab"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CreateItemPage">
+    
+    <Viewbox>
+
+        <Grid Height="450" Width="800">
+            <TextBlock x:Name="txt_TypeChoosen" FontSize="12" Margin="60,20,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" TextAlignment="Center" FontWeight="Bold"><Run Text="Please choose from "/><LineBreak/><Run Text="the Options below:"/></TextBlock>
+            <RadioButton x:Name="rdb_book" Content="Book" Height="20" Width="65" Margin="60,60,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="G_one" Checked="rdb_book_Checked"/>
+            <RadioButton x:Name="rdb_jurnal" Content="Jurnal" Height="20" Width="65" Margin="60,80,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="G_one" Checked="rdb_jurnal_Checked"/>
+            <TextBlock x:Name="txt_date" FontSize="12" Margin="0,20,60,0" HorizontalAlignment="Right" VerticalAlignment="Top" TextAlignment="Center" FontWeight="Bold"><Run Text="Please choose a"/><LineBreak/><Run Text="release date:"/></TextBlock>
+            <Viewbox Height="30" Width="80" Margin="0,60,65,0" HorizontalAlignment="Right" VerticalAlignment="Top">
+                <DatePicker x:Name="dp"></DatePicker>
+            </Viewbox>
+            
+            <StackPanel Orientation="Horizontal" Height="200" Width="240" Margin="20,140,0,0" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <StackPanel Width="120">
+                    <TextBlock x:Name="txt_author" FontSize="12" Margin="0,10,0,0" TextWrapping="Wrap" TextAlignment="Center" Text="Author Name" FontWeight="Bold" />
+                    <TextBlock x:Name="txt_title" FontSize="12" Margin="0,10,0,0" TextWrapping="Wrap" TextAlignment="Center" Text="Title Name" FontWeight="Bold" />
+                    <TextBlock x:Name="txt_comp" FontSize="12" Margin="0,10,0,0" TextWrapping="Wrap" TextAlignment="Center" Text="Publicer Company" FontWeight="Bold" />
+                    <TextBlock x:Name="txt_price" FontSize="12" Margin="0,10,0,0" TextWrapping="Wrap" TextAlignment="Center" Text="Price" FontWeight="Bold" />
+                </StackPanel>
+                <StackPanel Name="SP_TextBoxs" Width="120">
+                    <TextBox x:Name="tb_author" FontSize="10" Margin="0,10,0,0" TextWrapping="Wrap"/>
+                    <TextBox x:Name="tb_title" FontSize="10" Margin="0,10,0,0" TextWrapping="Wrap"/>
+                    <TextBox x:Name="tb_comp" FontSize="10" Margin="0,10,0,0" TextWrapping="Wrap"/>
+                    <TextBox x:Name="tb_price" FontSize="10" Margin="0,10,0,0" TextWrapping="Wrap"/>
+                </StackPanel>
+            </StackPanel>
+
+            <ListBox x:Name="lb_genre" FontSize="12" Height="280" Width="200" Margin="0,0,0,0" SelectionMode="Multiple" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+            <Button x:Name="btn_create" Content="Create" FontSize="12" Height="20" Width="60" Margin="0,330,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Click="btn_create_Click"/>
+            <TextBlock x:Name="txt_errors" FontSize="16" Height="200" Width="250" Margin="0,150,0,0" Foreground="Red" HorizontalAlignment="Right" VerticalAlignment="Center" TextWrapping="Wrap" FontFamily="Calibri"/>
+
+        </Grid>
+    </Viewbox>
+</Page>

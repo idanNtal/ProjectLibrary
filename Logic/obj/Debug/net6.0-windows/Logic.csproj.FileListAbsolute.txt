@@ -1,0 +1,24 @@
+C:\Users\97252\Desktop\LabProj\Logic\bin\Debug\net6.0-windows\Logic.deps.json
+C:\Users\97252\Desktop\LabProj\Logic\bin\Debug\net6.0-windows\Logic.dll
+C:\Users\97252\Desktop\LabProj\Logic\bin\Debug\net6.0-windows\Logic.pdb
+C:\Users\97252\Desktop\LabProj\Logic\obj\Debug\net6.0-windows\Logic.csproj.AssemblyReference.cache
+C:\Users\97252\Desktop\LabProj\Logic\obj\Debug\net6.0-windows\Logic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\97252\Desktop\LabProj\Logic\obj\Debug\net6.0-windows\Logic.AssemblyInfoInputs.cache
+C:\Users\97252\Desktop\LabProj\Logic\obj\Debug\net6.0-windows\Logic.AssemblyInfo.cs
+C:\Users\97252\Desktop\LabProj\Logic\obj\Debug\net6.0-windows\Logic.csproj.CoreCompileInputs.cache
+C:\Users\97252\Desktop\LabProj\Logic\obj\Debug\net6.0-windows\Logic.dll
+C:\Users\97252\Desktop\LabProj\Logic\obj\Debug\net6.0-windows\refint\Logic.dll
+C:\Users\97252\Desktop\LabProj\Logic\obj\Debug\net6.0-windows\Logic.pdb
+C:\Users\97252\Desktop\LabProj\Logic\obj\Debug\net6.0-windows\ref\Logic.dll
+C:\Users\97252\Desktop\Sela Collage\MiniProjects\LabProj\Logic\bin\Debug\net6.0-windows\Logic.deps.json
+C:\Users\97252\Desktop\Sela Collage\MiniProjects\LabProj\Logic\bin\Debug\net6.0-windows\Logic.dll
+C:\Users\97252\Desktop\Sela Collage\MiniProjects\LabProj\Logic\bin\Debug\net6.0-windows\Logic.pdb
+C:\Users\97252\Desktop\Sela Collage\MiniProjects\LabProj\Logic\obj\Debug\net6.0-windows\Logic.csproj.AssemblyReference.cache
+C:\Users\97252\Desktop\Sela Collage\MiniProjects\LabProj\Logic\obj\Debug\net6.0-windows\Logic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\97252\Desktop\Sela Collage\MiniProjects\LabProj\Logic\obj\Debug\net6.0-windows\Logic.AssemblyInfoInputs.cache
+C:\Users\97252\Desktop\Sela Collage\MiniProjects\LabProj\Logic\obj\Debug\net6.0-windows\Logic.AssemblyInfo.cs
+C:\Users\97252\Desktop\Sela Collage\MiniProjects\LabProj\Logic\obj\Debug\net6.0-windows\Logic.csproj.CoreCompileInputs.cache
+C:\Users\97252\Desktop\Sela Collage\MiniProjects\LabProj\Logic\obj\Debug\net6.0-windows\Logic.dll
+C:\Users\97252\Desktop\Sela Collage\MiniProjects\LabProj\Logic\obj\Debug\net6.0-windows\refint\Logic.dll
+C:\Users\97252\Desktop\Sela Collage\MiniProjects\LabProj\Logic\obj\Debug\net6.0-windows\Logic.pdb
+C:\Users\97252\Desktop\Sela Collage\MiniProjects\LabProj\Logic\obj\Debug\net6.0-windows\ref\Logic.dll

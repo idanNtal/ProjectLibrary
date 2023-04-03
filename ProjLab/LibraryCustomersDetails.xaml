@@ -1,0 +1,77 @@
+﻿<Page x:Class="ProjLab.LibraryCustomersDetails"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ProjLab"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="LibraryCustomersDetails">
+    
+    <Viewbox>
+        <Grid Height="450" Width="800">
+
+            
+            <StackPanel Height="250" Width="80" Margin="20,0,0,30" HorizontalAlignment="Left" VerticalAlignment="Bottom">
+                <TextBlock Text="UserName" FontSize="12" TextAlignment="Center"></TextBlock>
+                <ListView x:Name="lv_userNamesList" FontSize="10" Height="200" SelectionChanged="lv_userNamesList_SelectionChanged"></ListView>
+                <TextBlock Height="10"></TextBlock>
+                <Button x:Name="btn_removeCust" Content="Remove" Click="btn_removeCust_Click"></Button>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Height="250" Width="290" Margin="0,0,220,30" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                <StackPanel x:Name="SP_CustomerItems">
+                    <TextBlock x:Name="txt_customerItems" Text="Customer's Items" FontSize="12" HorizontalAlignment="Center"></TextBlock>
+                    <ListView x:Name="lv_customerItems" FontSize="12" Height="200" Width="200" IsEnabled="False"></ListView>
+                </StackPanel>
+                <StackPanel x:Name="SP_DaysToReturn" Visibility="Visible">
+                    <TextBlock x:Name="txt_DaysToReturn" Text="Days To Return" Margin="10,0,0,0" TextAlignment="Center"></TextBlock>
+                    <ListView x:Name="lv_DaysToReturn" Height="200" Width="80" Margin="10,0,0,0" IsEnabled="False" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></ListView>
+                </StackPanel>
+            </StackPanel>
+
+            <Border BorderBrush="Black" BorderThickness="1" CornerRadius="5" Margin="20,30,0,0" Height="100" Width="220" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <StackPanel x:Name="SP_customerInfo" Orientation="Horizontal">
+                    <StackPanel Margin="10,0,0,0">
+                        <TextBlock TextAlignment="Center">UserName</TextBlock>
+                        <TextBox x:Name="tb_userName" TextAlignment="Center" IsReadOnly="True"></TextBox>
+                        <TextBlock TextAlignment="Center" Margin="0,15,0,0">Age</TextBlock>
+                        <TextBox x:Name="tb_age" Width="30" TextAlignment="Center" IsReadOnly="True"></TextBox>
+                    </StackPanel>
+
+                    <StackPanel Margin="50,0,0,0">
+                        <TextBlock TextAlignment="Center">Amount of rentals</TextBlock>
+                        <TextBox x:Name="tb_rentedAmount" Width="30" TextAlignment="Center" IsReadOnly="True"></TextBox>
+                        <TextBlock TextAlignment="Center" Margin="0,15,0,0">Late returns</TextBlock>
+                        <TextBox x:Name="tb_lateReturn" Width="30" TextAlignment="Center" IsReadOnly="True"></TextBox>
+                    </StackPanel>
+
+                </StackPanel>
+            </Border>
+
+            <TextBlock Margin="0,30,110,0" FontSize="14" HorizontalAlignment="Right" VerticalAlignment="Top" FontWeight="Bold">Send a Message</TextBlock>
+            
+            <Border CornerRadius="10" Padding="5" BorderThickness="4" BorderBrush="Black" Height="350" Width="300" Margin="0,30,20,0" HorizontalAlignment="Right" VerticalAlignment="Center">
+                <StackPanel x:Name="SP_Email" Height="330" Width="270">
+                    <StackPanel Orientation="Horizontal">
+                        <StackPanel>
+                            <TextBlock FontWeight="Bold" Margin="0,10,0,0">Send To:</TextBlock>
+                            <TextBlock FontWeight="Bold" Margin="0,20,0,0">Title:</TextBlock>
+                            <TextBlock FontWeight="Bold" Margin="0,20,0,0">Message:</TextBlock>
+
+                        </StackPanel>
+                        <StackPanel Margin="10,0,0,0">
+                            <TextBox x:Name="tb_EmailSendTo" Width="200" Margin="0,10,0,0" TextAlignment="Center" IsReadOnly="True"></TextBox>
+                            <TextBox x:Name="tb_EmailTitle" Width="200" Margin="0,20,0,0"></TextBox>
+                            <TextBox x:Name="tb_EmailText" Width="200" Height="150" Margin="0,20,0,0" TextWrapping="Wrap" AcceptsReturn="True"></TextBox>
+
+                        </StackPanel>
+                    </StackPanel>
+
+                    <Button  x:Name="btn_sendMsg" Content="Send it ! 📩" FontWeight="Bold" Height="20" Width="100" Margin="0,20,0,0" Click="btn_sendMsg_Click"></Button>
+                </StackPanel>
+            </Border>
+
+        </Grid>
+    </Viewbox>
+</Page>

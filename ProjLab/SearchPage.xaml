@@ -1,0 +1,77 @@
+﻿<Page x:Class="ProjLab.SearchPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ProjLab"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="SearchPage">
+
+    <Viewbox>
+        <Grid Height="450" Width="800" >
+            <StackPanel Orientation="Horizontal" Height="18" Width="411" Margin="0,20,0,0" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <TextBlock x:Name="txt_titleList" Text="Search By:" Margin="0,0,20,0" TextAlignment="Center" Height="20" Width="70" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" ></TextBlock>
+                <RadioButton x:Name="rdb_searchByAuthor" Content="Author" Height="20" Width="65" IsChecked="False" Checked="rdb_searchByAuthor_Checked" ></RadioButton>
+                <RadioButton x:Name="rdb_searchByTitle" Content="Title" Height="20" Width="50" IsChecked="False" Checked="rdb_searchByTitle_Checked" ></RadioButton>
+                <RadioButton x:Name="rdb_searchByGenre" Content="Genre" Height="20" Width="60" IsChecked="False" Checked="rdb_searchByGenre_Checked" Unchecked="rdb_searchByGenre_Unchecked"></RadioButton>
+                <RadioButton x:Name="rdb_searchByYear" Content="Year" Height="20" Width="50" IsChecked="False" Checked="rdb_searchByYear_Checked" ></RadioButton>
+                <RadioButton x:Name="rdb_searchByCompany" Content="Company" Height="20" Width="70" IsChecked="False" Checked="rdb_searchByCompany_Checked" ></RadioButton>
+            </StackPanel>
+
+            <StackPanel Height="270" Width="130" Margin="80,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <StackPanel x:Name="SP_Search">
+                    <TextBlock x:Name="txt_titleSearch" Text="Enter the Search value:" Height="15" Width="130" FontSize="12" VerticalAlignment="Top" Margin="0,10,0,0" TextAlignment="Center"></TextBlock>
+                    <TextBox x:Name="tb_searchResult" PreviewTextInput="tb_searchResult_PreviewTextInput" FontSize="10" Height="20" Width="100" VerticalAlignment="Top" TextAlignment="Center"></TextBox>
+                    <TextBlock x:Name="txt_selectGenre" Text="Select Genre" Height="15" Width="100" FontSize="12" VerticalAlignment="Top" HorizontalAlignment="Left" Visibility="Collapsed" TextAlignment="Center"></TextBlock>
+                    <ListBox x:Name="lb_genre" Height="160" Width="100" FontSize="10" SelectionMode="Multiple" VerticalAlignment="Bottom" HorizontalAlignment="Left"  Visibility="Collapsed"></ListBox>
+                    <Button x:Name="btn_search" Content="Search" Height="20" Width="60" FontSize="12" Click="btn_search_Click"></Button>
+                </StackPanel>
+                <StackPanel x:Name="SP_display_edit_Fields" Width="80" Visibility="Collapsed">
+                    <TextBlock x:Name="txt_author" Text="Author" FontSize="10" TextAlignment="Center"></TextBlock>
+                    <TextBox x:Name="tb_author" Margin="0,0,0,10" Height="15" FontSize="8"></TextBox>
+                    <TextBlock x:Name="txt_title" Text="Title" FontSize="10" TextAlignment="Center"></TextBlock>
+                    <TextBox x:Name="tb_title" Margin="0,0,0,10" Height="15" FontSize="8"></TextBox>
+                    <TextBlock x:Name="txt_genre" Text="Genre" FontSize="10" TextAlignment="Center"></TextBlock>
+                    <ComboBox x:Name="cBox_genreToDisplay" Margin="0,0,0,10" FontSize="8" Height="15"></ComboBox>
+                    <ListBox x:Name="list_genre" Margin="0,0,0,10" FontSize="6" Height="15" SelectionMode="Multiple"></ListBox>
+                    <TextBlock x:Name="txt_comp" Text="PublisherComp" FontSize="10" TextAlignment="Center"></TextBlock>
+                    <TextBox x:Name="tb_comp" Margin="0,0,0,10" Height="15" FontSize="8"></TextBox>
+                    <TextBlock x:Name="txt_price" Text="Price" FontSize="10" TextAlignment="Center"></TextBlock>
+                    <TextBox x:Name="tb_price" Margin="0,0,0,10" Height="15" FontSize="8"></TextBox>
+                    <TextBlock x:Name="txt_publisheddate" Text="Published Date" FontSize="10" TextAlignment="Center"></TextBlock>
+                    <Viewbox Height="20">
+                        <DatePicker x:Name="tb_publisheddate" Width="200" Margin="0,0,0,10" FontSize="22"></DatePicker>
+                    </Viewbox>
+                    <TextBlock x:Name="txt_loandate" Text="Loan Date" FontSize="10" TextAlignment="Center"></TextBlock>
+                    <TextBox x:Name="tb_loandate" Margin="0,0,0,10" Height="15" FontSize="8" IsReadOnly="True"></TextBox>
+
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel x:Name="SP_edit_ButtonsOptions" Margin="0,0,320,0" Height="100" Width="50" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Collapsed">
+                <Button x:Name="Apply" Content="Apply" FontSize="10" Height="20" Margin="0,0,0,10" Click="Apply_Click"></Button>
+                <Button x:Name="Cancel" Content="cancel" FontSize="10" Height="20" Click="Cancel_Click"></Button>
+            </StackPanel>
+
+            <StackPanel Height="290" Width="200" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock x:Name="txt_results" Text="Results:" Height="15" Width="140" FontSize="10" TextAlignment="Center"></TextBlock>
+                <ListBox x:Name="lb_items" FontSize="12" Height="280" Width="200" SelectionChanged="lb_items_SelectionChanged"></ListBox>
+            </StackPanel>
+
+            <StackPanel x:Name="SP_Buttons" Height="160" Width="100" Margin="0,0,100,0" HorizontalAlignment="Right" VerticalAlignment="Center">
+                <TextBlock x:Name="txt_buttomsOprtions" Text="Select Action:" FontSize="12" Margin="0,0,0,15" TextAlignment="Center"></TextBlock>
+                <Button x:Name="btn_seeAllList" Content="Full List" FontSize="12" Height="20" Width="60" Click="btn_seeAllList_Click"></Button>
+                <Button x:Name="btn_add" Content="Add" FontSize="12" Height="20" Width="60" Click="btn_add_Click"></Button>
+                <Button x:Name="btn_remove" Content="Remove" FontSize="12" Height="20" Width="60" Click="btn_remove_Click"></Button>
+                <Button x:Name="btn_edit" Content="Edit" FontSize="12" Height="20" Width="60" Click="btn_edit_Click"></Button>
+                <Button x:Name="btn_Rent" Content="Rent" FontSize="12" Height="20" Width="60" Click="btn_Rent_Click"></Button>
+                <TextBlock x:Name="txt_updates" Margin="0,0,0,0" FontSize="8" Height="40" TextAlignment="Center"></TextBlock>
+            </StackPanel>
+
+
+
+
+        </Grid>
+    </Viewbox>
+</Page>

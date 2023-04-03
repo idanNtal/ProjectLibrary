@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Logic.Book" Collapsed="true">
+    <Position X="2.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAQAAAAAAAABA=</HashCode>
+      <FileName>Book.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Logic.Customer" Collapsed="true">
+    <Position X="9.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAKAAAAAAQAAAEAEEAAAQAAAAAAAgCAAAAAgQAAAg=</HashCode>
+      <FileName>Customer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Logic.ManageCustomerList" Collapsed="true">
+    <Position X="8" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAJAIAAAAAEAABABAAAAAAAAAAIAA=</HashCode>
+      <FileName>Customer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Logic.CustomerException" Collapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Customer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Logic.Inbox" Collapsed="true">
+    <Position X="11.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAACBAAAACAAAAAAAhEAgAAACAAAA=</HashCode>
+      <FileName>Inbox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Logic.MessageException" Collapsed="true">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Inbox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Logic.Item" Collapsed="true">
+    <Position X="3.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAgAAAAAAgAAEIAIAAAwCAAAAAGAAQAAEgACAABA=</HashCode>
+      <FileName>Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Logic.Jurnal" Collapsed="true">
+    <Position X="4.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Jurnal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Logic.Library" Collapsed="true">
+    <Position X="6.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAhAAQEEAQAwAAAAAAkAAIIAAUAGCAAEAAAACgQUQAA=</HashCode>
+      <FileName>Library.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Logic.ValidInput" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQACAACEAAAAAQAAAQAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>ValidInput.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Logic.InboxMessage" Collapsed="true">
+    <Position X="13.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAQAAAAAAEEAAAEAAABAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Inbox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Logic.IAuthorable" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IAuthorable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Logic.Genre" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hAAAIAABAEAAAAAAAAAEAIAAAAAAAAAQIAAAEBQAQIA=</HashCode>
+      <FileName>Emuns.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Logic.ItemTypes" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Emuns.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,22 @@
+
+##########################################################################################
+##########																		##########
+##########			Welcome to My Library Project	-	Description				##########
+##########	Idan Tal											Course	1083	##########
+##########################################################################################
+
+Project Description:
+This project is a simulator of library system.
+We have 2 main Modes, Manager and Customer.
+The manager can do action on item (just Book/Jurnal for now), Actions like add / remove / edit / copy, send message to customer, delete a customer
+and see the library info.
+
+
+The customer can rent the return an item, See his emails from the library.
+Every customer represent an unique UserCard / CustomerCard.
+There is no way that we have customers with the same UserName.
+
+When the customer rent an item he get an email with the rent date the the return date,
+Also the customer can see in the customer area how much time he have until the return date (in days), if the return date has passed,
+he will see nagative number (example: -3 == the return date was 3 days ago).
+The manager can see all this info also in the LibraryCustomerList.

@@ -1,0 +1,63 @@
+
+##########################################################################################
+##########																		##########
+##########				Welcome to My Library Project	-	Logic				##########
+##########	Idan Tal											Course	1083	##########
+##########################################################################################
+
+
+Fast & Short Explain for each Class:
+(Library class will be the last because he use all the others classes)
+
+## Item Class
+Every Item in the library is an Item at the end, he has Title Name, Price, Publish Date , Loan Date and more.
+Item class is abstract class and also the base class of Book and Jurnal.
+Item class have a methodes to Change hes values, and aslo abstract Clone methode that every Derived need to initialize.
+
+## Jurnal Class
+Derived Class from Item, didn't have new stuff.
+
+## Book Class
+Derived Class from Item, also Derived from interface IAuthorable and initialize the Author propertie.
+
+## IAuthorable interface
+Have only one Properie, Author.
+Every class / object that Derived from IAuthorable need to initialize the Author propertie.
+
+## ValidInput static Class 
+This class use from a validations class, if needed to get an name / price / datetime we can use this 
+class to check for a valid input.
+If the input is invalid => An exception is thrown.
+
+## InboxMessage Class
+This class allow to create a message.
+Every message have Sender, Title, Text and get a datetime that equal to DateTime.Now automatically if
+the message created and didnt get exception in the process.
+Every message also have IsRead Peopertie that can tell if the message already read or unread.
+when we used the showMail() methode, automatically the IsRead Propertie get the "true" value.
+
+## Inbox Class
+Every inbox have a List of messages, he save also methodes to send and detele messages.
+and can get the All Messages List or use one of the methode to get list of only Read/UnRead Messages.
+
+## Users Class
+Every user represent someone Library card.
+Every user have Name, Age, Password ,List of Items that he loan and Inbox.
+
+## ManageUserslist Class
+This class create for an easy way to control the Users.
+To create a user we have the Register methode, if all the values are valid, this methode create the new user 
+and add him to the users List.
+This class control all the users action that needed:
+Register (Create), Login, Change Password/UserName, RemoveUser(for Manager) and methode the get all the UseNames in the List.
+
+## Library Class
+The library use all the classes above.
+Library class have:
+2 List of Item, one of inStock Item and another to Loaned Items ans also methode to get all the Items.
+ManageUsersList => that contain list of Users.
+Inbox => to send a messages for users inbox.
+Methode for a single Item => (add/remove/copy/edit).
+Search methode by category (genre/year/title and more), for manager (search from all the Items) 
+and for customer (search from isStock items).
+Methode from Loan system => (Loan/Return/Check Item Loan Time and more).

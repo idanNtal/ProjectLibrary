@@ -1,0 +1,45 @@
+﻿<Window x:Class="ProjLab.SecondWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjLab"
+        mc:Ignorable="d"
+        Closing="Window_Closing"
+        Title="SecondWindow" Height="450" Width="800">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FFE6C0C0" Offset="1"/>
+            <GradientStop Color="#FFF30808" Offset="0"/>
+        </LinearGradientBrush>
+    </Window.Background>
+
+    <Viewbox>
+        <Grid x:Name="Grid">
+
+            <Border CornerRadius="10" BorderThickness="2" BorderBrush="Black" Height="430" Width="105" Margin="10,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <StackPanel x:Name="SP_Menu" Height="430" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Text="Menu:" TextAlignment="Center" Margin="0,10,0,0" FontWeight="Bold"></TextBlock>
+
+                    <StackPanel x:Name="SP_ManagerButtons">
+                        <Button x:Name="bnt_createItem" Content="📝 Create Item" Margin="0,10,0,0" Click="bnt_createItem_Click"></Button>
+                        <Button x:Name="bnt_searchItem" Content="🔍 Search Item" Click="bnt_searchItem_Click"></Button>
+                        <Button x:Name="bnt_libraryInfo" Content="📊 Library Info" Click="bnt_libraryInfo_Click"></Button>
+                        <Button x:Name="bnt_CustomersInfo" Content="🕵 Customers" Click="bnt_CustomersInfo_Click"></Button>
+                    </StackPanel>
+
+                    <StackPanel x:Name="SP_CustomerButtons">
+                        <Button x:Name="btn_rent" Content="📖 Rent Item" Margin="0,10,0,0" Click="btn_rent_Click"></Button>
+                        <Button x:Name="btn_CustomerArea" Content="🔓 User Area"  Click="btn_CustomerArea_Click"></Button>
+                        <Button x:Name="btn_CustomerInbox" Content="📫 Inbox" Click="btn_CustomerInbox_Click"></Button>
+                    </StackPanel>
+
+                </StackPanel>
+            </Border>
+
+            <Button x:Name="bnt_back" Content="🏠 Back" Width="50" Margin="20,0,0,20" HorizontalAlignment="Left" VerticalAlignment="Bottom" Background="LightGoldenrodYellow" Click="bnt_back_Click"></Button>
+            <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Content="" HorizontalAlignment="Left" Height="434" Margin="126,0,0,0" VerticalAlignment="Center" Width="674"/>
+
+        </Grid>
+    </Viewbox>
+</Window>

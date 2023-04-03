@@ -1,0 +1,49 @@
+﻿
+##########################################################################################
+##########																		##########
+##########				Welcome to My Library Project	-	UI					##########
+##########	Idan Tal											Course	1083	##########
+##########################################################################################
+
+The UI part of my project:
+In my project i have 2 windowns and few more pages.
+
+## First Window (MainWindow.xaml)
+This window is the start window, Display a welcome text, info for the tester (that check the project), and have 2 buttons.
+Manager Mode and Customer Mode Buttons. => Both buttons navigate to the Second window (in Customer Button if will be after Login/Register).
+
+## Second Window (SecondWindow.xaml)
+This window have stack panel and Frame that gets pages into it.
+The stack panel used list a Meun and have all the manager and the customer buttons. he get information who navigate to him by the UI enum.
+if he get nagivate from the Manager Mode button he will get UI.Manager and otherwise UI.Customer,
+and display the buttons depends of this info.
+Evey Button insert other page into the Frame.
+
+** The Back button is navigate to the start page (Select manager/customer option).
+
+## Pages
+# Create Item (Manager) 
+This gives the Manager access to create a new item (Book / Jurnal for now).
+Get an info of the item name, company, price and more and if all the input is valid the button "create" will create a new item and
+add him to the library items list.
+
+# Search Item (Manager) || Rent Item (Customer) 
+This page give the Manager option to find a specific item and display the item info / edit the item info, add copies and delete item.
+This page also give the Customer option to rent an item.
+
+# Library Info (Manager)
+In this page the Manager can see the items amount, and can filter the result by item type and Rented/UnRented
+
+# Custoemrs page (Manager)
+In this page the Manager can see the customers info, can select specific customer and see his rented items,
+the Manager can also send a message to the custoemr.
+
+# User Area (Customer)
+This page give the customer the option to return an item, and see all his items.
+In this page the customer also can change the UserName and the Password.
+
+# Inbox (Customer)
+This is the Customer Email.
+Here he can see the email that he get from the library, read them / delete them.
+
+
